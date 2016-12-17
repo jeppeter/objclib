@@ -3,12 +3,11 @@
 
 #import "ulog_debug.h"
 
-@interface Person : NSObject {
-	@private char* m_name;
-}
+@interface Person : NSObject 
 
-@property (readwrite,assign) char* m_name;
-- (void)sayHello;
+- (Person*)initwithNames:(char*)firstname lastname:(char*)alastname;
+- (void)Greet:(char*)greet;
+- (id)init;
 @end
 
 
