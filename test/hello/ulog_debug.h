@@ -3,9 +3,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define ULOG(fmt,...) \
+#define ULOG(...) \
 do{ \
-	NSString* __pc = [NSString stringWithFormat:fmt,__VA_ARGS__]; \
+	NSString* __pc = [NSString stringWithFormat:__VA_ARGS__]; \
 	NSLog(@"%s:%d %@",__FILE__,__LINE__,__pc); \
 	[__pc release];\
 } while(0)
