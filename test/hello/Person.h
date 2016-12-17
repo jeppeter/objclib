@@ -8,6 +8,8 @@
 - (Person*)initwithNames:(char*)firstname lastname:(char*)alastname;
 - (void)Greet:(char*)greet;
 - (id)init;
++ (int)GetMaxAge:(Person*)person;
++ (int)GetMinAge:(Person*)person;
 @end
 
 
